@@ -44,7 +44,7 @@ func NewZygoteService(runtimeSet map[string]*runtime.Runtime, templateSet map[st
 }
 
 func (service *ZygoteService) NewContainerByZygoteProcess(runtimeName, templateName string, messageBody string) error {
-	log.Infof("new container by zygote process, runtime=%s, template=%s", runtimeName, templateName)
+	//log.Infof("new container by zygote process, runtime=%s, template=%s", runtimeName, templateName)
 
 	runtimeZygoteProcessTree, ok := service.runtimeZygoteProcessTree[runtimeName]
 	if !ok {

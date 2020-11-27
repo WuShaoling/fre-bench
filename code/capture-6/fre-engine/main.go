@@ -51,6 +51,7 @@ func main() {
 	} else {
 		for i := 0; i < count; i++ {
 			_, _ = containerService.Create(i, r, t, zygote, map[string]interface{}{})
+			time.Sleep(1250 * time.Microsecond)
 		}
 	}
 	time.Sleep(time.Hour)
