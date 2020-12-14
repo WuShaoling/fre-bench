@@ -39,4 +39,9 @@ clear && docker run --rm -it -v /free:/free --privileged python/free/bench:3.7 b
 "cd /free && rm -rf workspace/container/* && ./free -runtime python3.7 -template echo -zygote -n 32" 64 128 256
 ``` 
 
-2. 
+### 6.3
+
+```bash
+docker run --rm -it -v /free:/free --privileged python/free/bench:3.7 bash -c \
+"cd /free && rm -rf workspace/container/* && ./free -runtime python3.7 -template django -zygote -n 1"
+```

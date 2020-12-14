@@ -20,7 +20,7 @@ def read_data(file):
 
 
 def draw():
-    data = read_data("./merge.128.csv")
+    data = read_data("data_set/merge.128.csv")
     for i in range(1, len(data)):
         for j in range(0, len(data[i])):
             data[i][j] = data[i][j] / 1000
@@ -31,6 +31,7 @@ def draw():
 
     plt.xlabel(x_label, fontsize=fz)
     plt.ylabel(y_label, fontsize=fz)
+    plt.xticks([0, 16, 32, 64, 96, 128])
     plt.legend(fontsize=fz)  # 设置题注
     plt.tick_params(labelsize=fz)
 
@@ -38,5 +39,5 @@ def draw():
     plt.close()
 
 
-plt.figure(figsize=(5, 3))
+# plt.figure(figsize=(5, 3))
 draw()

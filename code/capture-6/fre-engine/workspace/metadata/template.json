@@ -23,5 +23,68 @@
     "packages": [
       "django"
     ]
+  },
+  "flask": {
+    "name": "flask",
+    "version:": "0.1",
+    "runtime": "python3.7",
+    "handler": "index",
+    "packages": [
+      "flask"
+    ]
+  },
+  "numpy": {
+    "name": "numpy",
+    "version:": "0.1",
+    "runtime": "python3.7",
+    "handler": "index",
+    "packages": [
+      "numpy"
+    ]
+  },
+  "pandas": {
+    "name": "pandas",
+    "version:": "0.1",
+    "runtime": "python3.7",
+    "handler": "index",
+    "packages": [
+      "pandas"
+    ]
+  },
+  "matplotlib": {
+    "name": "matplotlib",
+    "version:": "0.1",
+    "runtime": "python3.7",
+    "handler": "index",
+    "packages": [
+      "matplotlib"
+    ]
+  },
+  "setuptools": {
+    "name": "setuptools",
+    "version:": "0.1",
+    "runtime": "python3.7",
+    "handler": "index",
+    "packages": [
+      "setuptools"
+    ]
+  },
+  "requests": {
+    "name": "requests",
+    "version:": "0.1",
+    "runtime": "python3.7",
+    "handler": "index",
+    "packages": [
+      "requests"
+    ]
+  },
+  "sqlalchemy": {
+    "name": "sqlalchemy",
+    "version:": "0.1",
+    "runtime": "python3.7",
+    "handler": "index",
+    "packages": [
+      "sqlalchemy"
+    ]
   }
 }

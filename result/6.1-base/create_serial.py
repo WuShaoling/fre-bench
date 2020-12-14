@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 label_list = ['64', '128', '256', '512']  # 横坐标刻度显示值
 list_docker = [427, 439, 452, 476]  # 纵坐标值1
 list_fre = [18, 20, 21, 23]  # 纵坐标值2
-x_label = "Concurrent Operations"
+x_label = "Serial Operations"
 y_label = "Startup time(ms)"
 output = "output/create_serial.png"
 fz = 10

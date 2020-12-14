@@ -25,7 +25,7 @@ def draw_a():
     total = [4.247 + 0.623, 6.598 + 0.764, 12.260 + 0.699, 21.244 + 0.669, 38.016 + 0.835]
 
     x_label = '(a) Concurrent Operations'
-    y_label = 'Latency(ms)'
+    y_label = 'Average Latency(ms)'
 
     x = range(len(list_mkdir))
 
@@ -94,7 +94,7 @@ def draw_c():
     plt.tick_params(labelsize=fz)
 
 
-plt.figure(figsize=(11, 3.5))
+plt.figure(figsize=(11, 4.5))
 draw_a()
 draw_c()
 plt.savefig(output, dpi=300, bbox_inches='tight')
