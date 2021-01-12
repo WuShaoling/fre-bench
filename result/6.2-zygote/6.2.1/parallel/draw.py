@@ -25,7 +25,7 @@ def draw():
     for i in range(1, len(matrix)):
         for j in range(0, len(matrix[i])):
             matrix[i][j] = matrix[i][j] / 1000
-            matrix[i][j] = math.sqrt(matrix[i][j])
+            # matrix[i][j] = math.sqrt(matrix[i][j])
             # matrix[i][j] = np.log2(matrix[i][j])
 
     plt.plot(matrix[0], matrix[2], '-.', color='k', label="FRE", linewidth=0.9)

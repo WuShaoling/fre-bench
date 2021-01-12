@@ -28,16 +28,16 @@ plt.figure(figsize=(10, 4))
 
 label_list = ['django', 'flask', 'numpy', 'pandas', 'matplotlib', 'scipy', 'setuptools', 'requests',
               'sqlalchemy']  # 横坐标刻度显示值
-list_docker = [19, 209, 120, 279, 56, 24, 124, 75, 102]  # 纵坐标值1
+list_docker = [49, 239, 150, 309, 86, 54, 154, 105, 132]  # 纵坐标值1
 list_fre = [3, 4, 4, 4, 5, 4, 4, 4, 5]  # 纵坐标值2
 x_label = "(a) Python Packages"
-y_label = "Load Time(ms)"
+y_label = "Operation Latency(ms)"
 output = "output/python.png"
 fz = 10
 x = range(len(list_docker))
 
-rects1 = plt.bar(x=x, height=list_docker, width=0.3, alpha=0.8, color='#BEBEBE', edgecolor='k', label="Import")
-rects2 = plt.bar(x=[i + 0.3 for i in x], height=list_fre, width=0.3, color='w', edgecolor='k', label="Import by zygote")
+rects1 = plt.bar(x=x, height=list_docker, width=0.3, alpha=0.8, color='#BEBEBE', edgecolor='k', label="fork()+execvp()")
+rects2 = plt.bar(x=[i + 0.3 for i in x], height=list_fre, width=0.3, color='w', edgecolor='k', label="zygote")
 
 # 编辑文本
 for rect in rects1:

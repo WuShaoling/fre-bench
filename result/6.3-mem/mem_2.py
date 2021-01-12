@@ -2,13 +2,13 @@ import matplotlib.pyplot as plt
 
 fz = 10
 
-image_list = ["t1", "t2", "t3", "t4", "t5"]
+image_list = ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
 
-host_list = [145, 210, 341, 599, 677]
-fre_list = [145, 217, 348, 608, 685]
-docker_list = [145, 233, 381, 680, 803]
+host_list = [145, 178, 210, 280, 321, 406, 539, 625, 677, 720]
+fre_list = [145, 184, 215, 289, 328, 416, 544, 630, 685, 725]
+docker_list = [145, 195, 233, 334, 401, 541, 659, 805, 893, 1030]
 
-plt.figure(figsize=(5.5, 4))
+plt.figure(figsize=(6, 4))
 
 plt.plot(image_list, host_list, ':', color='k', label="Host", linewidth=0.9)
 plt.plot(image_list, fre_list, '-', color='k', label="FRE", linewidth=0.9)

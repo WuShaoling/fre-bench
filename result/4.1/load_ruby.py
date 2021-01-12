@@ -26,18 +26,20 @@ multi_json : 3
 
 plt.figure(figsize=(10, 4))
 
-label_list = ['rspec', 'mime-types', 'i18n', 'minitest',
-              'thread_\nsafe', 'address\nable', 'diff-lcs', 'bundler', 'multi_json']  # 横坐标刻度显示值
-list_docker = [89, 166, 57, 31, 22, 118, 29, 80, 18]  # 纵坐标值1
-list_fre = [2, 3, 2, 3, 3, 4, 2, 4, 3]  # 纵坐标值2
+label_list = ['rspec', 'mime-types', 'diff-lcs', 'minitest', 'thread_safe',
+              'i18n', 'addressable', 'bundler', 'multi_json']  # 横坐标刻度显示值
+list_docker = [189, 266, 129, 131, 122,
+               157, 218, 180, 118]  # 纵坐标值1
+list_fre = [2, 3, 2, 3, 3,
+            2, 4, 4, 3]  # 纵坐标值2
 x_label = "(b) Ruby Packages"
-y_label = "Load Time(ms)"
+y_label = "Operation Latency(ms)"
 output = "output/ruby.png"
 fz = 10
 x = range(len(list_docker))
 
-rects1 = plt.bar(x=x, height=list_docker, width=0.3, alpha=0.8, color='#BEBEBE', edgecolor='k', label="Import")
-rects2 = plt.bar(x=[i + 0.3 for i in x], height=list_fre, width=0.3, color='w', edgecolor='k', label="Import by zygote")
+rects1 = plt.bar(x=x, height=list_docker, width=0.3, alpha=0.8, color='#BEBEBE', edgecolor='k', label="fork()+execvp()")
+rects2 = plt.bar(x=[i + 0.3 for i in x], height=list_fre, width=0.3, color='w', edgecolor='k', label="zygote")
 
 # 编辑文本
 for rect in rects1:
