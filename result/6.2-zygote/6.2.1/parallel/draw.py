@@ -26,7 +26,7 @@ def draw():
         for j in range(0, len(matrix[i])):
             matrix[i][j] = matrix[i][j] / 1000
             # matrix[i][j] = math.sqrt(matrix[i][j])
-            # matrix[i][j] = np.log2(matrix[i][j])
+            matrix[i][j] = np.log2(matrix[i][j])
 
     plt.plot(matrix[0], matrix[2], '-.', color='k', label="FRE", linewidth=0.9)
     plt.plot(matrix[0], matrix[1], ':', color='k', label="FRE+Zygote", linewidth=0.9)
@@ -34,7 +34,7 @@ def draw():
 
     plt.legend(loc='best', fontsize=fz)
     plt.xlabel('Concurrent Operations', fontsize=fz)
-    plt.ylabel('Latency(ms)', fontsize=fz)
+    plt.ylabel('Latency after log2(ms)', fontsize=fz)
     plt.xticks([0, 16, 32, 48, 64])
     plt.tick_params(labelsize=fz)
 
